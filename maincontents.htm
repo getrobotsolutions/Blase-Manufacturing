@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html" charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=10"/>
+
+    <script language="JavaScript" type="text/javascript" src="Scripts/BaseCommand.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/BaseEvent.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/LogConsole.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/Language.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/custom.js"></script>
+    <script type="text/javascript" src="Scripts/jquery-3.3.1.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="maincontents.js"></script>
+    <script src="boots/js/bootstrap.min.js"></script> 
+    <link rel="stylesheet" href="boots/css/bootstrap.min.css">
+    
+    <link href="css/Main.css" rel="stylesheet" type="text/css"/>
+</head>
+
+
+<body  onbeforeunload="JSUnload()" ondragstart="return false;" ondrop="return false;" style="-ms-user-select:none;" oncontextmenu="return false;">
+
+  <header onclick="">
+    <div class="config" onclick="FC_ContentsCall('Config')">
+        <img src="assets/config.png" height="80">
+    </div>
+    <!--<div class="img-home" onclick="location.href ='maincontents.htm'"></div>-->
+    <div class="logo">
+      <img src="assets/logo.png">
+    </div>
+
+  </header>
+  <nav></nav>
+  <section class="main-content">
+    <video id="myVideo" width="1080" height="720" nocontrols  autoplay><source src="Contents/Videos/videos/Movie.mp4" type="video/mp4">Your browser does not support the video tag.</video> </div>
+    
+  </section>
+
+  <header onclick="location.href='main.htm'">
+    <div class="logo">
+      <img src="assets/logo.png">
+    </div>
+
+  </header>
+  <div id="dialog-overlay"></div>
+  <div id="dialog-box">
+  </div>
+  <style type="text/css">
+    nav {
+    height: 1px;
+  }
+  .main-content {
+    height: 1000px;
+    margin-top: 215px;
+    border-bottom: 10px solid #18388f;
+}
+  </style>
+  <script type="text/javascript">
+    /*function GetJoke(){
+    var temp=Math.floor((Math.random() * 9) + 1);
+    PlaySpeech(jokes[temp]);
+    //alert(jokes[temp]);
+  }
+  var initialJokeTime=setTimeout(GetJoke,30000);
+
+  $(document).click(function(event) {
+      clearTimeout( initialJokeTime );
+      initialJokeTime=setTimeout(GetJoke,120000);
+  });*/
+  </script>
+</body>
+</html>
