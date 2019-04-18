@@ -33,41 +33,15 @@
   <img src="../../assets/icons/home.png" class="img-home" onclick="FC_ContentsCall('Home')">
 </nav>
   <section class="main-content">
-    <div class="wrap" style="text-align: center;">
-      <h1 class="sub-header title" style="color: black;"> CLick on a logo below to learn more</h1>
+    
+      <img id="slide" src="images/1.png" width="1080">
+        
+        <!--<div style="text-align: center;width: 1080px">    
+            <div class="prev" onclick="change(-1)"><</div>
+            <div class="next" onclick="change(1)">></div>
+        </div>-->
       
-      <div class="products-box">
-        <div class="col-sm-6 product-box" style="" onclick="ShowPopup('QA Consultants')">
-          <img src="images/QAC.png">
-          <!--<img src="images/play-2.png" style="width: 50px;position: absolute;top: 160px;    left: 217px;">-->
-        </div>
-
-        <div class="col-sm-6 product-box" onclick="ShowPopup('IBM')">
-          <img src="images/IBM-Logo.png">
-          <!--<img src="images/play-2.png" style="width: 50px;position: absolute;top: 160px;    left: 217px;">-->
-        </div>
-      </div>
-      <div class="products-box">
-        <div class="col-sm-6 product-box" onclick="ShowPopup('eCAMION')">
-          <img src="images/eCamion.png">
-          
-        </div>
-        <div class="col-sm-6 product-box" onclick="ShowPopup('Gap Wireless')">
-          <img src="images/GapWirelessReg_RedBlk-PNG.png">
-          
-        </div>
-      </div> 
-      <div class="products-box">
-        <div class="col-sm-6 product-box" style="" onclick="ShowPopup('Keysight Technologies')">
-          <img src="images/Keysight Technologies.png">
-        </div>
-
-        <div class="col-sm-6 product-box" onclick="ShowPopup('SmartCone Technologies')">
-          <img src="images/SmartCone Logo ALLRED.png">
-        </div>
-      </div>
-      
-    </div>
+    
   </section>
   <footer>
     <img src="../../assets/footer.png" width="1080">
@@ -97,6 +71,18 @@
 
 <script language="javascript" type="text/javascript">
     //window.history.forward();
+    var index=1;
+function change(src){
+  index=index+src;
+  if (index<1) {
+      index=10;
+  }
+  else if (index>10) {
+    index=1;
+  }
+  document.getElementById('slide').src="images/"+index+".png";
+}
+//var t=setTimeout(change(1),4000);
 </script>
 
 

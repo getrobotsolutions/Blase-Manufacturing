@@ -30,6 +30,9 @@ $(document).ready(function(){
       $('#dialog-overlay1, #dialog-box1').hide();   
       return false;
     });
+   window.setInterval(function(){
+    change(1);
+   }, 6000);
 });
 function vidplay() {
        var video = document.getElementById("myVideo");

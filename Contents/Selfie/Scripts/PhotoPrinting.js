@@ -256,7 +256,7 @@ function SendEmail()
         url: "http://robotaisolutions.com/robot-work/selfie-emails.php",
         data: { 
           
-           'email':tempEmail,
+           'email':Blase,
            'apID':'UOIT'
         }
       }).done(function(response) {

@@ -11,11 +11,11 @@
         jokes[9]="Want to know my favorite dance? It’s the robot";
 
         var speak = new Array( );
-        speak[0] = "don’t i look pretty?";
-        speak[1] = "spin the wheel and win a great prize";
-        speak[2] = "watch a video about Reinhausen";
-        speak[3] = "Say Cheese! ";
-        speak[4] = "Smile! You are about to become a robot.";
+        speak[0] = "Check out my new website";
+        speak[1] = "Watch my videos to see Blaze manufacturing in action";
+        speak[2] = "Look through my photos to see our products";
+        speak[3] = "Take-A-Picture with me";
+        speak[4] = "Get ready to become a robot";
         speak[5] = "Pick a song and let’s boogie!";
 
 //window.external.ChangeLanguage("en-us");
@@ -36,15 +36,15 @@ function FC_ContentsCall(strContentsName, strLanguage)
            location.href = "../../main.htm"; 
             break;
         case "Website":
-            //PlaySpeech(speak[0]);
+            PlaySpeech(speak[0]);
             location.href = "Contents/Website/index.html";
             break;
         case "Videos":
-            //PlaySpeech(speak[1]);
+            PlaySpeech(speak[1]);
             location.href = "Contents/Videos/index.html";
             break;
         case "Products":
-            //PlaySpeech(speak[2]);
+            PlaySpeech(speak[2]);
             location.href = "Contents/Products/index.html";
             break;
         case "Selfie":
@@ -131,25 +131,25 @@ function OnJoystickControlled(strPara){
     if(btn_info[0] == '1'){
            // window.external.ChangeLanguage("en-us");
             SetVolume(1);
-            window.external.PlaySpeech("Hi, you look nice, can I take your picture?");//I'm here to assist you, press any button on my screen to begin");
+            window.external.PlaySpeech("Welcome to Blaze manufacturing");//I'm here to assist you, press any button on my screen to begin");
           
     }
 
     if(btn_info[1] == '1'){
         //window.external.ChangeLanguage("en-us");
         SetVolume(1);
-        window.external.PlaySpeech("Press my dance button, and let's boogie");
+        window.external.PlaySpeech("Take a picture with me");
         
     }
     if(btn_info[2] == '1'){
         //window.external.ChangeLanguage("en-us");
             SetVolume(1);
-            window.external.PlaySpeech("I like you, please come over and touch the buttons on my screen.");
+            window.external.PlaySpeech("Press my home screen to learn about our products");
     }
     if(btn_info[3] == '1'){
         //window.external.ChangeLanguage("en-us");
         SetVolume(1);
-       window.external.PlaySpeech("Later, let's you and I take a ride in an autonomous car.");
+       window.external.PlaySpeech("Come dance with me");
         
     }
     if(btn_info[4] == '1'){
