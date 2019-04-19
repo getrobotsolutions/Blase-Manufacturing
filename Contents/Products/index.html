@@ -26,15 +26,15 @@
 
 <header >
   <div class="logo">
-      <img src="../../assets/logo.png" onclick="FC_ContentsCall('Home')">
+      <img src="../../assets/logo.png" onclick="FC_ContentsCall('Menu')">
     </div>
 </header>
 <nav>
-  <img src="../../assets/icons/home.png" class="img-home" onclick="FC_ContentsCall('Home')">
+  <img src="../../assets/icons/home.png" class="img-home" onclick="FC_ContentsCall('Menu')">
 </nav>
   <section class="main-content">
     
-      <img id="slide" src="images/1.png" width="1080">
+      <img id="slide" src="images/1.jpg" width="1080">
         
         <!--<div style="text-align: center;width: 1080px">    
             <div class="prev" onclick="change(-1)"><</div>
@@ -75,12 +75,12 @@
 function change(src){
   index=index+src;
   if (index<1) {
-      index=10;
+      index=5;
   }
-  else if (index>10) {
+  else if (index>5) {
     index=1;
   }
-  document.getElementById('slide').src="images/"+index+".png";
+  document.getElementById('slide').src="images/"+index+".jpg";
 }
 //var t=setTimeout(change(1),4000);
 </script>

@@ -26,7 +26,7 @@
     </div>
     <!--<div class="img-home" onclick="location.href ='maincontents.htm'"></div>-->
     <div class="logo">
-      <img src="assets/logo.png">
+      <img src="assets/logo.png" onclick="FC_ContentsCall('Home')">
     </div>
 
   </header>
@@ -92,17 +92,15 @@
 }
   </style>
   <script type="text/javascript">
-    /*function GetJoke(){
-    var temp=Math.floor((Math.random() * 9) + 1);
-    PlaySpeech(jokes[temp]);
-    //alert(jokes[temp]);
-  }
-  var initialJokeTime=setTimeout(GetJoke,30000);
+    function redirectToSS(){
+      window.location.href = "maincontents.htm";
+    }
+    var tempTime=setTimeout(redirectToSS,10000);
 
-  $(document).click(function(event) {
-      clearTimeout( initialJokeTime );
-      initialJokeTime=setTimeout(GetJoke,120000);
-  });*/
+    $(document).click(function(event) {
+        clearTimeout( tempTime );
+        tempTime=setTimeout(redirectToSS,240000);
+    });
   </script>
 </body>
 </html>
