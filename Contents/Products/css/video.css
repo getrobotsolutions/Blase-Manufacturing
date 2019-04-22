@@ -150,13 +150,17 @@ a.button:hover {
     height: 904px;
     margin-top: 20px;
   }
-  #thumbs ul{list-style:none;}
+  #thumbs ul{list-style:none;padding: 0;}
 #thumbs ul #img img{
   width: 200px;
 }
+ #thumbs{
+  width: 1080px;
+  text-align: center;
+ }
  #thumbs li {
     float: left;
-    width: 205px;
+    width: 214px;
    
     cursor: pointer;
     border: 1px solid #d8d8da;
