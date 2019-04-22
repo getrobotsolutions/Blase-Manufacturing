@@ -147,6 +147,20 @@ a.button:hover {
 }
 
 .main-content {
-    height: 856px;
-    margin-top: 130px;
+    height: 904px;
+    margin-top: 20px;
   }
+  #thumbs ul{list-style:none;}
+#thumbs ul #img img{
+  width: 200px;
+}
+ #thumbs li {
+    float: left;
+    width: 205px;
+   
+    cursor: pointer;
+    border: 1px solid #d8d8da;
+    padding: 2px 0;
+    text-align: center;
+    margin-right: 1px;
+}

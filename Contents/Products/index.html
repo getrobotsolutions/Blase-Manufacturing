@@ -40,6 +40,15 @@
             <div class="prev" onclick="change(-1)"><</div>
             <div class="next" onclick="change(1)">></div>
         </div>-->
+        <div id="thumbs">
+          <ul>
+              <li id="img" dir="images/1.jpg" style=""><img src="images/1.jpg" alt=""/></li>
+              <li id="img" dir="images/2.jpg"><img src="images/2.jpg" alt=""/></li>
+              <li id="img" dir="images/3.jpg"><img src="images/3.jpg" alt=""/></li>
+              <li id="img" dir="images/4.jpg"><img src="images/4.jpg" alt=""/></li>
+              <li id="img" dir="images/5.jpg"><img src="images/5.jpg" alt=""/></li>
+          </ul>
+        </div>
       
     
   </section>
@@ -83,6 +92,10 @@ function change(src){
   document.getElementById('slide').src="images/"+index+".jpg";
 }
 //var t=setTimeout(change(1),4000);
+//var initialSlideTime=setTimeout(change(1), 6000);
+$(document).ready(function(){
+  
+});
 </script>
 
 

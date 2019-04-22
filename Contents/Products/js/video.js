@@ -30,9 +30,21 @@ $(document).ready(function(){
       $('#dialog-overlay1, #dialog-box1').hide();   
       return false;
     });
-   window.setInterval(function(){
+   
+   var x=setInterval(function(){
     change(1);
    }, 6000);
+   $('#thumbs ul #img').click(function(){
+    var imgpath = $(this).attr('dir');
+    $("#slide").attr('src',imgpath)
+     clearInterval(x);
+     x=setInterval(function(){
+    change(1);
+   }, 6000);
+    //$('#image').html('<img src='+imgpath+'>');
+     //clearInterval(initialSlideTime);
+     //initialSlideTime=setTimeout(change(1), 6000);
+  });
 });
 function vidplay() {
        var video = document.getElementById("myVideo");
