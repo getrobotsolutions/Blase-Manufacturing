@@ -16,7 +16,7 @@ var MotionCount = 10;
 function DanceStart()
 {
 	window.external.RobotDanceStart(true);
-	/*switch(cnt)
+	switch(cnt)
 	{
 		case 1:	
 			Play01(); 
@@ -60,7 +60,7 @@ function DanceStart()
 			break;
 
 	}
-*/
+
 
 	cnt++;
 	if(cnt == MotionCount)
